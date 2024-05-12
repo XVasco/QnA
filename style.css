@@ -1,88 +1,109 @@
 body {
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    background-color: #f5e6cc;
-    color: #663300;
-    margin: 0;
-    padding: 0;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  background-color: #f5e6cc;
+  color: #663300;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff1d6;
-    border: 2px solid #d2b48c;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff1d6;
+  border: 2px solid #d2b48c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 #question-container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #answer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    /* Memungkinkan elemen merespons pada layar kecil */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #answer {
-    flex-grow: 1;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    /* Memberikan jarak antar elemen pada layar kecil */
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #d2b48c;
-    border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #d2b48c;
+  border-radius: 5px;
 }
 
 #submit-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #d2b48c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d2b48c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #result-container {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Media Query untuk layar kecil (ukuran maksimum 600px) */
 @media (max-width: 600px) {
-    .container {
-        margin: 10px;
-        padding: 10px;
-    }
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
 
-    h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
-    #answer-container {
-        flex-direction: column;
-        /* Mengatur elemen secara vertikal pada layar kecil */
-        align-items: stretch;
-    }
+  #answer-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    #answer {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  #answer {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media Query untuk layar besar (ukuran minimum 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 800px;
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  #answer {
+    font-size: 20px;
+  }
+
+  #submit-btn {
+    font-size: 20px;
+  }
+
+  #result-container {
+    font-size: 24px;
+  }
 }
 
 .fireworks {

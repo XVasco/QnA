@@ -4,11 +4,14 @@ body {
   color: #663300;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 600px;
-  margin: 20px auto;
   padding: 20px;
   background-color: #fff1d6;
   border: 2px solid #d2b48c;
@@ -61,8 +64,12 @@ h1 {
 
 /* Media Query untuk layar kecil (ukuran maksimum 600px) */
 @media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
   .container {
-    margin: 10px;
+    margin: 0;
     padding: 10px;
   }
 
@@ -103,6 +110,30 @@ h1 {
 
   #result-container {
     font-size: 24px;
+  }
+}
+
+/* Media Query untuk perangkat seluler besar (phablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  #answer {
+    font-size: 18px;
+  }
+
+  #submit-btn {
+    font-size: 18px;
+  }
+
+  #result-container {
+    font-size: 22px;
   }
 }
 

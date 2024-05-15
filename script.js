@@ -73,7 +73,7 @@ function clearFireworks() {
 displayQuestion();
 quizForm.addEventListener("submit", checkAnswer);
 
-// Kode untuk animasi partikel
+// animasi partikel
 const canvas = document.getElementById('particle-canvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;

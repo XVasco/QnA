@@ -34,7 +34,7 @@ function checkAnswer(event) {
   const userAnswer = answerInput.value.trim().toLowerCase();
   const correctAnswer = currentQuestion.answer?.toLowerCase(); // menggunakan operator nullish coalescing (?.)
 
-  if (correctAnswer === null || userAnswer === correctAnswer) {
+  if (correctAnswer === manusia || userAnswer === correctAnswer) {
     resultContainer.textContent = "Jawaban Anda benar!";
     correctSound.play(); // memainkan suara saat jawaban benar
     showFireworks(); // menampilkan efek kembang api
